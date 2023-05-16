@@ -10,10 +10,10 @@ body {
     background: #fffcf8;
     background-image: linear-gradient(#f1f1f1 1px, transparent 1px), linear-gradient(to right, #f1f1f1 1px, transparent 1px);
     background-size: 32px 32px;
-    --theme: #946ce6;
+    --theme: #F77649;
     --tm-theme: #F77649;
-    --pink: rgb(255, 43, 121);
-    --theme-bg: rgba(148, 108, 230, 0.1);
+    --pink: #00b8ac;
+    --theme-bg:  rgba(228, 116, 30, 0.1);
     --tm-theme-bg: rgba(228, 116, 30, 0.1);
     --black: rgb(37, 37, 37);
     --whrite: #fff;

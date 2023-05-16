@@ -90,7 +90,7 @@ export default function Register({ id }) {
             <option value="4">管理</option>
         </select>}
         <li><button onClick={register} disabled={loading}>{loading ? '少年注册中...' : id ? '修改' : '注册'}</button></li>
-        {id && <li><button onClick={logout} style={{ background: '#ff2b79' }}>退出登陆</button></li>}
+        {id && <li><button onClick={logout} style={{ background: 'var(--pink)' }}>退出登陆</button></li>}
         {!id && <li><A href="/login">登录</A></li>}
     </div>
 }
