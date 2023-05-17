@@ -7,12 +7,9 @@ body {
     font-size: 14px;
     list-style: none;
     color: var(--color);
-    background: #fffcf8;
-    background-image: linear-gradient(#f1f1f1 1px, transparent 1px), linear-gradient(to right, #f1f1f1 1px, transparent 1px);
-    background-size: 32px 32px;
     --theme: #F77649;
     --tm-theme: #F77649;
-    --pink: #00b8ac;
+    --cyan: #00b8ac;
     --theme-bg:  rgba(228, 116, 30, 0.1);
     --tm-theme-bg: rgba(228, 116, 30, 0.1);
     --black: rgb(37, 37, 37);
@@ -55,7 +52,6 @@ header input::-webkit-input-placeholder {
 }
 
 ::-webkit-scrollbar {
-    display: none;
 }
 
 ::-webkit-scrollbar-thumb {

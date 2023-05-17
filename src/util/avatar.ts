@@ -11,9 +11,17 @@ export function getAvatar(avatar) {
 }
 
 export function getSuo(content) {
-  if(!content) return ""
+  if (!content) return ""
   let m = content.match(/suo(.+?)\)/i)
   return m ? m[1].slice(2) : 'https://cdn-us.imgs.moe/2023/02/27/63fcb180cbb30.jpg'
+}
+
+export function getBio(content) {
+  console.log(content)
+  if (!content) return "没有填写简介哦"
+  let m = content.match(/(\`{3}[\w|\W]+\`{3})/ig)
+  console.log(m)
+  return m ? m[0].replace(/\`{3}/g,'`') : '木有填写简介哦'
 }
 
 export function getAv(id) {
@@ -28,9 +36,9 @@ export function isMobile() {
   }
 }
 
-export default function shouldVIP(time){
+export default function shouldVIP(time) {
   let tt = new Date(time)
   let ttt = tt.getTime()
 
-  return ttt>=Date.now()
+  return ttt >= Date.now()
 }

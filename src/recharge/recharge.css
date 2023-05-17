@@ -10,15 +10,12 @@
     text-align: center;
 }
 
-h1 {
-    padding: 20px;
-}
 
 .vip ul li {
     width: 50%;
     padding: 10px;
     border-radius: 5px;
-    color: var(--pink);
+    color: var(--cyan);
     background: rgb(255, 43, 121, 0.2);
     margin: 15px;
     box-sizing: border-box;
@@ -27,7 +24,7 @@ h1 {
 }
 
 .vip ul .active {
-    background: var(--pink);
+    background: var(--cyan);
     color: #fff;
 }
 
@@ -47,12 +44,12 @@ h1 {
 .vip .userinfo input {
     border-radius: 19px;
     padding: 10px;
-    border: 1px solid var(--pink);
+    border: 1px solid var(--cyan);
     flex: 1;
 }
 
 .vip p{
-    color: var(--pink);
+    color: var(--cyan);
     padding-bottom: 10px;
     font-weight: bold;
     margin: 5px;
