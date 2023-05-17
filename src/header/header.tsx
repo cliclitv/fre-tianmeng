@@ -43,7 +43,7 @@ export default function Header() {
                     <input type="text" placeholder="搜一下下菊花又不会坏😏" onKeyDown={keydown} onInput={(e) => changeKey(e.target.value)} />
                 </div>
                 <div className="biu">
-                    <a href="https://app.tmread.com" target="_blank"><li><i className="icon-font icon-download"></i>APP</li></a>
+                    <a href="https://app.tm0.net" target="_blank"><li><i className="icon-font icon-download"></i>APP</li></a>
                     {user.id == null && <a href="#" onclick={()=>push('/login')}><li><i className="icon-font icon-denglu"></i>登录</li></a>}
                     <li onClick={() => push('/recharge')}><i className="icon-font icon-dadou"></i>弯豆</li>
                     <li onClick={openWallet} style={{position:'relative'}}>

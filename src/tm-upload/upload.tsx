@@ -70,7 +70,7 @@ export default function Upload(props) {
     ['授权转载', '无版权转载']]
     return (
         <div className="upload-tm">
-            <h1>甜梦投稿</h1>
+            <h1>小说投稿</h1>
             <div className="title">
                 <input type="text" placeholder="请输入标题" value={post.title} onInput={e => change('title', e.target.value)} />
             </div>

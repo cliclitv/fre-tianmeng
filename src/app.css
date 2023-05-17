@@ -37,7 +37,7 @@ button {
 }
 
 a {
-    color: var(--color);
+    color: var(--cyan);
     text-decoration: none
 }
 

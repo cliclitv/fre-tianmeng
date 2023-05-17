@@ -4,11 +4,11 @@ import { ListA } from '../list/list'
 import { ListB } from '../list/list'
 import './home.css'
 import { getSuo, getBio } from '../util/avatar'
+import { post } from '../util/post'
 
 export default function Home() {
     const [recommend, setRecommend] = useState([])
-    const [index, setIndex] = useState(0)
-    const [play, setPlay] = useState("")
+    const [tip, setTip] = useState({})
     const [short, setShort] = useState([])
     const [other, setOther] = useState([])
     useEffect(() => {
@@ -20,6 +20,9 @@ export default function Home() {
         })
         getPost('短篇', '', 1, 10).then((res: any) => {
             setShort(res.posts)
+        })
+        getPostDetail(30).then(res=>{
+            setTip(res.result)
         })
     }, [])
 
@@ -37,7 +40,8 @@ export default function Home() {
             <div class="wrap home">
                 <div className="left">
                     <div className="swiper">
-                        <img src="https://resourcecp.oss-cn-beijing.aliyuncs.com/uploads/20230512/a2e11bc2d43ab271a372b0cbd13837e5.jpg?x-oss-process=style/original" alt="" />
+                        <img src={getSuo(tip.content)} alt="" />
+                        <p>{tip.title}</p>
                     </div>
                     <h1>短篇强推</h1>
                     <ul>

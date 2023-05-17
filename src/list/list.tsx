@@ -1,5 +1,5 @@
 import { push } from "../use-route"
-import { getSuo } from "../util/avatar"
+import { getBio, getSuo } from "../util/avatar"
 import './list.css'
 import { h } from 'fre'
 
@@ -25,6 +25,7 @@ export function ListA({ posts, editor }) {
                         <img src={getSuo(item.content)} />
                     </div>
                     <div className="title">{item.title}</div>
+                    <p>{getBio(item.content)}</p>
                 </div>
             </li>
         })}
