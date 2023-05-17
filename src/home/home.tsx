@@ -28,7 +28,7 @@ export default function Home() {
         <div >
             <nav>
                 <ul class="wrap">
-                    <li class={window.location.pathname=='/'?'active':''}>首页</li>
+                    <li class={window.location.pathname == '/' ? 'active' : ''}>首页</li>
                     <li>排行</li>
                     <li>索引</li>
                     <li>版权</li>
@@ -75,6 +75,15 @@ export default function Home() {
                         })}
                     </ul>
                 </div>
+
+            </div>
+            <div className="wrap">
+                <h1 class='list-h'>纯爱推荐</h1>
+                <ListA posts={recommend} editor={false}></ListA>
+            </div>
+            <div className="wrap">
+                <h1 class='list-h'>短篇推荐</h1>
+                <ListA posts={short} editor={false}></ListA>
             </div>
         </div>
     )

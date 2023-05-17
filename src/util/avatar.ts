@@ -17,10 +17,8 @@ export function getSuo(content) {
 }
 
 export function getBio(content) {
-  console.log(content)
   if (!content) return "没有填写简介哦"
   let m = content.match(/(\`{3}[\w|\W]+\`{3})/ig)
-  console.log(m)
   return m ? m[0].replace(/\`{3}/g,'`') : '木有填写简介哦'
 }
 

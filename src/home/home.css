@@ -1,5 +1,5 @@
 .wrap {
-    width: 1200px;
+    width: 1300px;
     margin: 0 auto;
     /* display: flex; */
 }
@@ -13,19 +13,20 @@ nav {
     font-size: 18px;
     font-weight: bold;
     background: #f2f2f2;
+    box-shadow: 2px 2px 4px #dde;
 }
 
 nav ul li {
     padding: 10px 100px;
 }
 
-nav li.active{
+nav li.active {
     color: var(--theme);
 }
 
 .home {
     display: flex;
-    margin: 20px auto;
+    margin: 20px auto 0 auto;
 }
 
 .home .left {
@@ -83,7 +84,7 @@ nav li.active{
     color: #bbb;
 }
 
-.home  .left b {
+.home .left b {
     color: var(--cyan);
 }
 
@@ -105,4 +106,9 @@ nav li.active{
 .home .right {
     flex: 1.5;
     height: 500px;
+}
+
+.list-h {
+    padding: 10px;
+    font-size: 18px;
 }
